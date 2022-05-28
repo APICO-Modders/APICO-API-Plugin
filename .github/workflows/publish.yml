@@ -9,7 +9,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
       - name: Archive Release
         uses: thedoctor0/zip-release@main
         with:
