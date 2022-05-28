@@ -1,0 +1,20 @@
+---@class menu_definition
+---@field id string
+---@field name string
+---@field category string
+---@field tooltip string
+---@field shop_key boolean
+---@field shop_buy number
+---@field shop_sell number
+---@field layout layout[]
+---@field info info[]
+---@field buttons string[] Valid Options: ['help', 'target', 'sort', 'move', 'close']
+---@field machines string[] optional
+---@field tools string[] optional
+---@field nature boolean
+---@field aquatic boolean optional
+---@field deep boolean optional
+---@field singular boolean optional
+---@field invisible boolean optional
+---@field center boolean optional
+---@field item_sprite string optional

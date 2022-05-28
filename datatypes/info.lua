@@ -1,0 +1,3 @@
+---@class info
+---@field 1 string tooltip
+---@field 2 string color key

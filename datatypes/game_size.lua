@@ -1,0 +1,3 @@
+---@class game_size
+---@field width number
+---@field height number

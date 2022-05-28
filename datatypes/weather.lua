@@ -1,0 +1,4 @@
+---@class weather
+---@field active boolean
+---@field start_time number
+---@field end_time string

@@ -1,0 +1,5 @@
+---@class scripts
+---@field define string
+---@field change string
+---@field tick string
+---@field draw string

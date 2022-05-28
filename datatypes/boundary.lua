@@ -1,0 +1,5 @@
+---@class boundary
+---@field top number
+---@field left number
+---@field bottom number
+---@field right number

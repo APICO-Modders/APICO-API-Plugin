@@ -1,0 +1,7 @@
+---@class blueprint
+---@field width number
+---@field height number
+---@field x number
+---@field y number
+---@field type string Options: [forest, swamp, snow, hallow]
+---@field dye number [Optional] 1-16

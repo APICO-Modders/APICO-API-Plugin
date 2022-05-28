@@ -1,0 +1,11 @@
+---@class npc_definition
+---@field id number
+---@field name string
+---@field pronouns string
+---@field tooltip string
+---@field specials string[]
+---@field stock string[]
+---@field greeting string
+---@field dialogue string[]
+---@field walking boolean [optional]
+---@field shop boolean [optional]

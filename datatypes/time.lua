@@ -1,0 +1,5 @@
+---@class time
+---@field time number
+---@field day number
+---@field name string
+---@field clock string

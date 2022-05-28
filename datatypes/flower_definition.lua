@@ -1,0 +1,16 @@
+---@class flower_definition
+---@field id string
+---@field species string
+---@field title string
+---@field latin string
+---@field hint string
+---@field desc string
+---@field aquatic boolean
+---@field deep boolean
+---@field shop_buy number
+---@field shop_sell number
+---@field machines string[]
+---@field tools string[]
+---@field variants number
+---@field chance number
+---@field smoker string[]

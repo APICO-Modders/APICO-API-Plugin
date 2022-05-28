@@ -1,0 +1,21 @@
+---@class bee_definition
+---@field id string
+---@field title string
+---@field latin string
+---@field hint string
+---@field desc string
+---@field lifespan string[]
+---@field productivity string[]
+---@field fertility string[]
+---@field stability string[]
+---@field behaviour string[]
+---@field climate string[]
+---@field rainlover boolean
+---@field snowlover boolean
+---@field grumpy boolean
+---@field produce string
+---@field chance number
+---@field requirement string
+---@field bid string
+---@field calming string[]
+---@field tier number

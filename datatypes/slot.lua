@@ -1,0 +1,8 @@
+---@class slot
+---@field id number
+---@field index number
+---@field item string
+---@field count number
+---@field current_health number
+---@field total_health number
+---@field stats table

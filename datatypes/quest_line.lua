@@ -1,0 +1,5 @@
+---@class quest_line
+---@field text string
+---@field color string
+---@field gif string
+---@field width number

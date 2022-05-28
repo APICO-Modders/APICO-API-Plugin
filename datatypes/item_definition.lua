@@ -1,0 +1,17 @@
+---@class item_definition
+---@field id string
+---@field name string
+---@field category string
+---@field tooltip string
+---@field shop_key boolean
+---@field shop_buy number
+---@field shop_sell number
+---@field machines string[] optional
+---@field placeable boolean optional
+---@field place_grass boolean optional
+---@field place_water boolean optional
+---@field place_deep boolean optional
+---@field singular boolean optional
+---@field durability boolean optional
+---@field obj string optional
+---@field honeycore boolean optional

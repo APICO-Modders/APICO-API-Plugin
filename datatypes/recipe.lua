@@ -1,0 +1,4 @@
+---@class recipe
+---@field item string
+---@field recipe ingredient[]
+---@field total number

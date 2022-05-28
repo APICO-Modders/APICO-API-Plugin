@@ -1,0 +1,3 @@
+---@class coordinate
+---@field x number
+---@field y number

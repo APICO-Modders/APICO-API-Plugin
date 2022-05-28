@@ -1,0 +1,21 @@
+---@class obj_definition
+---@field id string
+---@field name string
+---@field category string
+---@field tooltip string
+---@field shop_key boolean
+---@field shop_buy number
+---@field shop_sell number
+---@field machines string[] optional
+---@field tools string[] optional
+---@field place_grass boolean optional
+---@field place_water boolean optional
+---@field place_deep boolean optional
+---@field singular boolean optional
+---@field honeycore boolean optional
+---@field invisible boolean optional
+---@field has_shadow boolean optional
+---@field pickable boolean optional
+---@field variants number optional
+---@field growth string optional
+---@field item_sprite string optional

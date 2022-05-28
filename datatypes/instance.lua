@@ -1,0 +1,9 @@
+---@class instance
+---@field id number
+---@field x number
+---@field y number
+---@field oid string
+---@field sprite_index number
+---@field image_index number
+---@field menu_id number will be nil if not a menu instance
+---@field slots slot[] will be nil if not a menu instance
