@@ -1,8 +1,5 @@
 name: Create Archive
-on:
-  push:
-    tags:
-      - '*'
+on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,14 +7,24 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v2
+
+      - name: Get next version
+        uses: reecetech/version-increment@2022.5.1
+        id: version
+        with:
+          scheme: calver
+          increment: patch
+
       - name: Archive Release
         uses: thedoctor0/zip-release@main
         with:
           type: 'zip'
           filename: 'apicolib.zip'
           exclusions: '*.git* /*node_modules/* .editorconfig'
+
       - name: Upload Release
         uses: ncipollo/release-action@v1
         with:
+          tag: "${{ steps.version.outputs.version }}"
           artifacts: "apicolib.zip"
           token: ${{ secrets.GITHUB_TOKEN }}
