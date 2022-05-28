@@ -70,5 +70,6 @@ function api_toggle_menu(menu_id, toggle)  end
 function api_unlock_quest(quest_id)  end
 
 ---
+---@since 1.2.0
 ---@return boolean returns if the game is paused or not.
 function api_is_game_paused()  end
