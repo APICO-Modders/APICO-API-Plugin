@@ -1,7 +1,7 @@
 ---@class blueprint
----@field width number
----@field height number
----@field x number
----@field y number
----@field type string Options: [forest, swamp, snow, hallow]
----@field dye number [Optional] 1-16
+---@field width number the width of the blueprint, which effects the blob of land created
+---@field height number the height of the blueprint, which effects the blob of land created
+---@field x number the y position in the world to put this blueprint
+---@field y number the y position in the world to put this blueprint
+---@field type string the type of biome to set for this blueprint | "'forest'" | "'swamp'" | "'snow'" | "'hallow'"
+---@field dye number [Optional] set a dye to apply to the land and nature items, valid number between 1-16

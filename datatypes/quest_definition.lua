@@ -1,7 +1,7 @@
 ---@class quest_definition
----@field id string
----@field title string
----@field reqs string[]
----@field icon string
----@field reward boolean
----@field unlock string[]
+---@field id string the unique id for your quest, for use with the progress handler
+---@field title string the title of your quest as shown in the book chapter list
+---@field reqs string[] the requirements needed for the quest to be ready, e.g. ["axe1@2"] would mean 2 wooden axes are needed to complete
+---@field icon string the item oid of the item to use for the icon in the overview section of the book
+---@field reward boolean the reward that will be given when the quest is handed in, e.g. "honeycore1@10" would give 10 honeycore crystals
+---@field unlock string[] a list of quests ids to unlock when this quest is complete

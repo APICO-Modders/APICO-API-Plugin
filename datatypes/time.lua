@@ -1,5 +1,5 @@
 ---@class time
----@field time number
----@field day number
----@field name string
----@field clock string
+---@field time number the current time in the day, in ms. This is a number from 0 - 1440000. One hour in-game is 60000ms, or 1 minute.
+---@field day number the current day that the player is on
+---@field name string the "name" for the time of day | "'Day'" | "'Dawn'" | "'Dusk'" | "'Night'"
+---@field clock string the current "clock" for the time of day

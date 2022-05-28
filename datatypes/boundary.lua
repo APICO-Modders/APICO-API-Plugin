@@ -1,5 +1,5 @@
 ---@class boundary
----@field top number
----@field left number
----@field bottom number
----@field right number
+---@field top number the top y position of the bounding box
+---@field left number  	the left x position of the bounding box
+---@field bottom number the bottom y position of the bounding box
+---@field right number the right x position of the bounding box

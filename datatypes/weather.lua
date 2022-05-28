@@ -1,4 +1,4 @@
 ---@class weather
----@field active boolean
----@field start_time number
----@field end_time string
+---@field active boolean whether weather is current "on" or not
+---@field start_time number the time weather will start today, in ms
+---@field end_time string the time weather will end today, in ms

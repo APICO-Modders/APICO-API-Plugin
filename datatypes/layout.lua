@@ -1,5 +1,5 @@
 ---@class layout
----@field 1 number x
----@field 2 number y
----@field 3 string [optional] Slot Type: 'input', 'Liquid Input', 'Output', 'Liquid Output', 'Shop'
----@field 4 string[] [optional] if slot is Input type you can define input oids.
+---@field 1 number the x position for the slot, relative to the menu's top left coordinate
+---@field 2 number the y position for the slot, relative to the menu's top left coordinate
+---@field 3 string [Optional] the type of slot this is | "'Input'" | "'Liquid Input'" | "'Output'" | "'Liquid Output'" | "'Shop'"
+---@field 4 string[] [Optional] if the type of slot is Input or Liquid Input, this let's you define the items that are allowed in them

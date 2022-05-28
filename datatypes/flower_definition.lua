@@ -1,16 +1,16 @@
 ---@class flower_definition
----@field id string
----@field species string
----@field title string
----@field latin string
----@field hint string
----@field desc string
----@field aquatic boolean
----@field deep boolean
----@field shop_buy number
----@field shop_sell number
----@field machines string[]
----@field tools string[]
----@field variants number
----@field chance number
----@field smoker string[]
+---@field id string unique ID for this flower - your oid will be a combination of "flower" and your id
+---@field species string lowercase unique name for your flower
+---@field title string name of your flower for tooltips
+---@field latin string the latin name for your flower, shown in the book
+---@field hint string the hint to show in the book when this species hasn't been discovered yet
+---@field desc string the description to show in the book when this species has been discovered
+---@field aquatic boolean whether this flower can be planted / grow on shallow water
+---@field deep boolean [Optional] whether this flower can be planted / grow on deep water
+---@field shop_buy number [Optional] the amount this flower can be bought for if sold by an NPC
+---@field shop_sell number [Optional] the amount this flower can be sold for at an NPC
+---@field machines string[] [Optional] a list of object oids that this flower can be used in
+---@field tools string[] [Optional] a list of tools that can be used on this flower,
+---@field variants number [Optional] specifies the number of variants in your sprite image, defaults to 1
+---@field chance number [Optional] the chance this species will be formed as a mutation, defaults to 100
+---@field smoker string[] [Optional] a list of bee species that this flower can be used to calm in a smoker

@@ -1,3 +1,3 @@
 ---@class info
----@field 1 string tooltip
----@field 2 string color key
+---@field 1 string the tooltip to show
+---@field 2 string | "'GREEN'" | "'BLUE'" | "'RED'" | "'YELLOW'" | "'WHITE'"

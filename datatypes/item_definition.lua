@@ -1,17 +1,17 @@
 ---@class item_definition
----@field id string
----@field name string
----@field category string
----@field tooltip string
----@field shop_key boolean
----@field shop_buy number
----@field shop_sell number
----@field machines string[] optional
----@field placeable boolean optional
----@field place_grass boolean optional
----@field place_water boolean optional
----@field place_deep boolean optional
----@field singular boolean optional
----@field durability boolean optional
----@field obj string optional
----@field honeycore boolean optional
+---@field id string id to use to create an oid for this item. Unless defining a flower, your new item oid will be a your mod_id + the item id give
+---@field name string the name of this item, shown in tooltips
+---@field category string the category for this item, shown in expanded tooltips
+---@field tooltip string the tooltip message for this item, shown in expanded tooltips
+---@field shop_key boolean whether this is a "key" item and so cannot be sold
+---@field shop_buy number the amount this item can be bought for if sold by an NPC
+---@field shop_sell number the amount this item can be sold for at an NPC
+---@field machines string[] [Optional] a list of object oids that this item this can be used in
+---@field placeable boolean [Optional] whether this item can be placed down on the ground, will use the object oid specified in "obj" if true
+---@field place_grass boolean [Optional] if placeable, this specifies if the item can only be placed on grass
+---@field place_water boolean [Optional] if placeable, this specifies if the item can only be placed on shallow water
+---@field place_deep boolean [Optional] if placeable, this specifies if the item can only be placed on deep water
+---@field singular boolean [Optional] if specified, items created with this definition will not be able to stack, like frames - you MUST give it a durability if you set this
+---@field durability boolean [Optional] if specified, items created with this definition will have a durability, like tools
+---@field obj string [Optional] if placeable, this specifies the object oid that will be created when the item is used
+---@field honeycore boolean [Optional] if true, this item will be bought + sold for honeycore instead of rubees

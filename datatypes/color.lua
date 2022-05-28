@@ -1,4 +1,4 @@
 ---@class color
----@field r number
----@field g number
----@field b number
+---@field r number the red value of the color
+---@field g number the green value of the color
+---@field b number the blue value of the color

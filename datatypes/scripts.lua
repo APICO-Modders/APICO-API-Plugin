@@ -1,5 +1,5 @@
 ---@class scripts
----@field define string
----@field change string
----@field tick string
----@field draw string
+---@field define string a script to run when the menu object is first defined, allowing you to set custom properties and stuff
+---@field change string a script to run when a slot inside the menu object gets changed
+---@field tick string a script to run every tick (0.1s) for that menu object, as long as it's active
+---@field draw string a script to run every draw cycle for this menu object, only when the object's menu is actually open
