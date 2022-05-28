@@ -1,4 +1,0 @@
----@class stats
----@field r number
----@field g number
----@field b number
