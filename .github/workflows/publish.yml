@@ -20,7 +20,7 @@ jobs:
         with:
           type: 'zip'
           filename: 'apicoapi.zip'
-          exclusions: '*.git* /*node_modules/* .editorconfig'
+          exclusions: '*.git* /*node_modules/* .editorconfig *.md'
 
       - name: Upload Release
         uses: ncipollo/release-action@v1
