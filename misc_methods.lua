@@ -68,3 +68,7 @@ function api_toggle_menu(menu_id, toggle)  end
 ---@param quest_id string the quest id used when defining your quest
 ---@return string|nil If this method worked it will return Success, otherwise if it fails it will return nil and will log an error in the Modding Console.
 function api_unlock_quest(quest_id)  end
+
+---
+---@return boolean returns if the game is paused or not.
+function api_is_game_paused()  end
