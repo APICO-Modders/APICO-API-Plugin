@@ -1,6 +1,6 @@
 ---
----@param inst_id number
----@return boundary|nil
+---@param inst_id number the instance you want to get the boundary for
+---@return boundary|nil Returns either a boundary or nil with errors logged in the Modding Console.
 function api_get_boundary(inst_id)  end
 
 ---
@@ -17,12 +17,12 @@ function api_get_cam()  end
 function api_get_data()  end
 
 ---
----@param oid string
+---@param oid string the oid to retrieve a dictionary definition for
 ---@return table|nil
 function api_get_definition(oid)  end
 
 ---
----@return string
+---@return string returns a string, with either an oid or empty if there's nothing equipped.
 function api_get_equipped()  end
 
 ---
@@ -30,13 +30,13 @@ function api_get_equipped()  end
 function api_get_filename()  end
 
 ---
----@param tx number
----@param ty number
----@return string
+---@param tx number the x position to check
+---@param ty number the y position to check
+---@return string returns a floor oid
 function api_get_floor(tx, ty)  end
 
 ---
----@param radius number [Optiona] IF supplied will get flowers in radius around player if not supplied will get all flowers on screen.
+---@param radius number [Optional] if specified this method will get all objects within this radius from the player, rather than get all onscreen
 ---@return instance[]
 function api_get_flowers(radius)  end
 
@@ -45,35 +45,35 @@ function api_get_flowers(radius)  end
 function api_get_game_size()  end
 
 ---
----@param tx number
----@param ty number
----@return string
+---@param tx number the x position to check
+---@param ty number the y position to check
+---@return string returns a ground oid
 function api_get_ground(tx, ty)  end
 
 ---
----@param inst_type string Options: [item, obj, menu_obj, menu, slot, ui, wall, carpet, ground]
----@return number|nil
+---@param inst_type string | "'item'" | "'obj'" | "'menu_obj'" | "'menu'" | "'slot'" | "'ui'" | "'wall'" | "'carpet'" | "'ground'"
+---@return number|nil returns the inst_id of the highlighted instance or nil if nothing highlighted.
 function api_get_highlighted(inst_type)  end
 
 ---
----@param inst_id number
----@return instance|nil
+---@param inst_id number an instance id to get the properties for
+---@return instance|nil returns instance if found otherwise nil
 function api_get_inst(inst_id)  end
 
 ---
----@param inst_type string Options: [item, obj, tree, flower, menu_obj]
----@param x1 number
----@param y1 number
----@param x2 number
----@param y2 number
+---@param inst_type string | "'item'" | "'obj'" | "'tree'" | "'flower'" | "'menu_obj'"
+---@param x1 number left x position of the rectangle box
+---@param y1 number top y position of the rectangle box
+---@param x2 number right x position of the rectangle box
+---@param y2 number bottom y position of the rectangle box
 ---@return instance[]
 function api_get_inst_in_rectangle(inst_type, x1, y1, x2, y2)  end
 
 ---
----@param inst_type string Options: [item, obj, tree, flower, menu_obj]
----@param x1 number
----@param y1 number
----@param rad number
+---@param inst_type string | "'item'" | "'obj'" | "'tree'" | "'flower'" | "'menu_obj'"
+---@param x1 number x center position of the circle
+---@param y1 number y center position of the circle
+---@param rad number radius of the circle
 ---@return instance[]
 function api_get_inst_in_circle(inst_type, x1, y1, rad)  end
 
@@ -95,7 +95,7 @@ function api_get_key_pressed(key_label)  end
 function api_get_menu_objects(radius, oid, coordinate)  end
 
 ---
----@param menu_id number
+---@param menu_id number the menu instance to get the menu object inst for
 ---@return number|nil
 function api_get_menus_obj(menu_id)  end
 
@@ -131,36 +131,36 @@ function api_get_player_position()  end
 function api_get_player_tile_position()  end
 
 ---
----@param inst_id number
----@param prop_name string
----@return any
+---@param inst_id number instance id to get a property for
+---@param prop_name string name of the property to try and get
+---@return any if fails will return nil and log error in Modding Console.
 function api_get_property(inst_id, prop_name)  end
 
 ---
----@param inst_id number
----@param prop_name string
----@return any
+---@param inst_id number instance id to get a property for
+---@param prop_name string name of the property to try and get
+---@return any if fails will return nil and log error in Modding Console.
 function api_gp(inst_id, prop_name)  end
 
 ---
----@param menu_id number
----@param slot_index number
+---@param menu_id number menu instance to get a slot from
+---@param slot_index number index of the slot to get, starting at 1
 ---@return slot [WIP] the wiki says slot_instance but I cant find what a slot_instance is.
 function api_get_slot(menu_id, slot_index)  end
 
 ---
----@param slot_id number
----@return number
+---@param slot_id number slot instance to get properties for
+---@return slot [WIP] the wiki says slot_instance but I cant find what a slot_instance is.
 function api_get_slot_inst(slot_id)  end
 
 ---
----@param menu_id number
+---@param menu_id number menu instance to get a slot from
 ---@return slot[] [WIP] the wiki says slot_instance 's but I cant find what a slot_instance is.
 function api_get_slots(menu_id)  end
 
 ---
----@param oid string
----@return number|nil
+---@param oid string sprite to get the reference for. Note: you need to prepend the oid with "sp_"
+---@return number|nil returns sprite id if found otherwise nil
 function api_get_sprite(oid)  end
 
 ---
