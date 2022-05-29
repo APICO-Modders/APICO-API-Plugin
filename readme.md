@@ -13,7 +13,7 @@ If it was difficult to follow my steps I made this small gif to show everything 
 #### Right click and open in new tab to read easier.
 ![](https://cdn.upload.systems/uploads/VHqrCJaX.gif)
 
-# Apico Mod Api for VS Code
+# Apico Mod Api for VS Code with EmmyLua
 1. Install EmmyLua Extension
 2. Download packaged api from releases on the right
 3. Unzip the `apicoapi.zip` into a folder to use later.
@@ -25,3 +25,16 @@ If it was difficult to follow my steps I made this small gif to show everything 
 If it was difficult to follow my steps I made this small gif to show everything after step 1, 2, and 3.
 #### Right click and open in new tab to read easier.
 ![](https://cdn.upload.systems/uploads/U9lLH9AW.gif)
+
+# Apico Mod Api for VS Code with Lua Language Server
+1. Have Lua Language Server Installed
+2. Download packaged api from releases on the right
+3. Unzip the `apicoapi.zip` into a folder to use later.
+4. Open Lua Language Server settings
+5. Go to Workspace: Library setting
+6. put in the path to your unzipped `apicoapi` folder
+7. You now have the api library, so you can get code completion so have fun!
+
+If it was difficult to follow my steps I made this small gif to show everything after step 1, 2, and 3.
+#### Right click and open in new tab to read easier.
+![](https://cdn.upload.systems/uploads/IsFi8phr.gif)
