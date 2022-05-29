@@ -4,8 +4,7 @@ How to install per platform/extension
 -
 <details>
     <summary>Intellij IDEA</summary>
-
-## Installation
+<br>
 1. Install EmmyLua Plugin and restart intellij IDEA
 2. Download packaged api from releases on the right
 3. Open Project Structure under file tab in intellij
@@ -22,7 +21,7 @@ If it was difficult to follow my steps I made this small gif to show everything 
 
 <details>
     <summary>VS Code with Lua Language Server</summary>
-
+<br>
 1. Open Extension Menu, you can press <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>X</kbd>
 2. In the search bar put in `sumneko.lua` and install the first result.
 3. After installation make sure you have the zip from the github downloaded. https://github.com/ThatGravyBoat/Apico-Api/releases
@@ -41,7 +40,7 @@ If it was difficult to follow my steps I made this small gif to show everything 
 
 <details>
     <summary>VS Code with EmmyLua (Not Recommended, Use Lua Language Server)</summary>
-
+<br>
 1. Install EmmyLua Extension
 2. Download packaged api from releases on the right
 3. Unzip the `apicoapi.zip` into a folder to use later.
