@@ -10,16 +10,18 @@
 7. You now have the api library, so you can get code completion so have fun!
 
 If it was difficult to follow my steps I made this small gif to show everything after step 1 and 2.
+#### Right click and open in new tab to read easier.
 ![](https://cdn.upload.systems/uploads/VHqrCJaX.gif)
 
 # Apico Mod Api for VS Code
-1. Install EmmyLua Plugin
+1. Install EmmyLua Extension
 2. Download packaged api from releases on the right
-3. Unzip the apicoapi.zip into a folder to use later.
+3. Unzip the `apicoapi.zip` into a folder to use later.
 4. Open your mod as a workspace.
 5. Right click file structure and click add folder to workspace
-6. Find that unzipped apicoapi folder and click that
+6. Find that unzipped `apicoapi` folder and click that
 8. You now have the api library, so you can get code completion so have fun!
 
 If it was difficult to follow my steps I made this small gif to show everything after step 1, 2, and 3.
+#### Right click and open in new tab to read easier.
 ![](https://cdn.upload.systems/uploads/U9lLH9AW.gif)
