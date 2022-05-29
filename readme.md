@@ -1,4 +1,9 @@
-# Apico Mod Api for Intellij IDEA
+
+# Apico Lua API
+How to install per platform/extension
+-
+<details>
+    <summary>Intellij IDEA</summary>
 
 ## Installation
 1. Install EmmyLua Plugin and restart intellij IDEA
@@ -13,7 +18,30 @@ If it was difficult to follow my steps I made this small gif to show everything 
 #### Right click and open in new tab to read easier.
 ![](https://cdn.upload.systems/uploads/VHqrCJaX.gif)
 
-# Apico Mod Api for VS Code with EmmyLua
+</details>
+
+<details>
+    <summary>VS Code with Lua Language Server</summary>
+
+1. Open Extension Menu, you can press <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>X</kbd>
+2. In the search bar put in `sumneko.lua` and install the first result.
+3. After installation make sure you have the zip from the github downloaded. https://github.com/ThatGravyBoat/Apico-Api/releases
+4. If not done already unzip the download from the github.
+5. Back in VS Code open settings, you can press <kbd>CTRL</kbd> + <kbd>,</kbd>
+6. In the search bar put in `@ext:sumneko.lua library`
+7. The second result(Lua > Workspace: Library) is the setting you need to change.
+8. Click 'Add Item' and put in the path to the folder you created when you unzipped the file in step 4.
+9. Have fun with code completion.
+
+If it was difficult to follow my steps I made this small gif to show everything after step 1, 2, 3, and 4.
+#### Right click and open in new tab to read easier.
+![](https://cdn.upload.systems/uploads/IsFi8phr.gif)
+
+</details>
+
+<details>
+    <summary>VS Code with EmmyLua (Not Recommended, Use Lua Language Server)</summary>
+
 1. Install EmmyLua Extension
 2. Download packaged api from releases on the right
 3. Unzip the `apicoapi.zip` into a folder to use later.
@@ -25,16 +53,4 @@ If it was difficult to follow my steps I made this small gif to show everything 
 If it was difficult to follow my steps I made this small gif to show everything after step 1, 2, and 3.
 #### Right click and open in new tab to read easier.
 ![](https://cdn.upload.systems/uploads/U9lLH9AW.gif)
-
-# Apico Mod Api for VS Code with Lua Language Server
-1. Have Lua Language Server Installed
-2. Download packaged api from releases on the right
-3. Unzip the `apicoapi.zip` into a folder to use later.
-4. Open Lua Language Server settings
-5. Go to Workspace: Library setting
-6. put in the path to your unzipped `apicoapi` folder
-7. You now have the api library, so you can get code completion so have fun!
-
-If it was difficult to follow my steps I made this small gif to show everything after step 1, 2, and 3.
-#### Right click and open in new tab to read easier.
-![](https://cdn.upload.systems/uploads/IsFi8phr.gif)
+</details>
