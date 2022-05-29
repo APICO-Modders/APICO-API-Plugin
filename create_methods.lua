@@ -48,7 +48,7 @@ function api_create_obj(oid, x, y)  end
 ---
 ---@param method string the function you want to call when the timer ends
 ---@param seconds number the amount of time you want to wait
----@param arg1 any [Optional] an argument to pass into the callback
----@param arg2 any [Optional] an argument to pass into the callback
----@param arg3 any [Optional] an argument to pass into the callback
+---@param arg1 any? [Optional] an argument to pass into the callback
+---@param arg2 any? [Optional] an argument to pass into the callback
+---@param arg3 any? [Optional] an argument to pass into the callback
 function api_create_timer(method, seconds, arg1, arg2, arg3)  end

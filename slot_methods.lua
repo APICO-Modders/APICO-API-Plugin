@@ -5,7 +5,7 @@ function api_slot_clear(slot_id)  end
 
 ---
 ---@param slot_id number the slot id of the slot instance you want to clear
----@param amount number [Optional] amount to decrease by, defaults to 1
+---@param amount number? [Optional] amount to decrease by, defaults to 1
 ---@return string|nil If this method worked it will return Success, otherwise if it fails it will return nil and will log an error in the Modding Console.
 function api_slot_decr(slot_id, amount)  end
 
@@ -24,7 +24,7 @@ function api_slot_drain(menu_id, slot_index)  end
 
 ---
 ---@param menu_id number the slot id of the slot instance you want to clear
----@param slot_index number [Optional] amount to increase by, defaults to 1
+---@param slot_index number? [Optional] amount to increase by, defaults to 1
 ---@return string|nil If this method worked it will return Success, otherwise if it fails it will return nil and will log an error in the Modding Console.
 function api_slot_fill(menu_id, slot_index)  end
 
@@ -37,7 +37,7 @@ function api_slot_item_id(menu_id, slot_index)  end
 ---
 ---@param menu_id number the menu instance you want to find matches on
 ---@param match string[] a list of item values you want to match on, can be an item oid, "ANY" (for any item), or "" for blank
----@param first_only boolean [Optional] if true, this method will return the first slot only rather than a list of matches
+---@param first_only boolean? [Optional] if true, this method will return the first slot only rather than a list of matches
 ---@return instance|instance[]|nil If first_only is true will return instance if one found or nil if not found and if first_only false will return a list of instances empty if none found.
 function api_slot_match(menu_id, match, first_only)  end
 
@@ -45,7 +45,7 @@ function api_slot_match(menu_id, match, first_only)  end
 ---@param menu_id number the menu instance you want to find matches on
 ---@param match string[] a list of item values you want to match on, can be an item oid, "ANY" (for any item), or "" for blank
 ---@param range number[] a list of slot indexes to check. Indices start at 1 like LUA lists do
----@param first_only boolean [Optional] if true, this method will return the first slot only rather than a list of matches
+---@param first_only boolean? [Optional] if true, this method will return the first slot only rather than a list of matches
 ---@return instance|instance[]|nil If first_only is true will return instance if one found or nil if not found and if first_only false will return a list of instances empty if none found.
 function api_slot_match_range(menu_id, match, range, first_only)  end
 
@@ -53,7 +53,7 @@ function api_slot_match_range(menu_id, match, range, first_only)  end
 ---@param slot_id number the slot id of the slot instance you want to set
 ---@param item_oid string the item oid you want to set in the slot
 ---@param amount number the amount of the item you want to set. If setting a singular item this will be ignored
----@param stats table [Optional] a stats obj to use, can be one you got from api_create_bee_stats() or a custom one
+---@param stats table? [Optional] a stats obj to use, can be one you got from api_create_bee_stats() or a custom one
 ---@return string|nil If this method worked it will return Success, otherwise if it fails it will return nil and will log an error in the Modding Console.
 function api_slot_set(slot_id, item_oid, amount, stats)  end
 

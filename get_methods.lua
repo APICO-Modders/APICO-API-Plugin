@@ -36,7 +36,7 @@ function api_get_filename()  end
 function api_get_floor(tx, ty)  end
 
 ---
----@param radius number [Optional] if specified this method will get all objects within this radius from the player, rather than get all onscreen
+---@param radius number? [Optional] if specified this method will get all objects within this radius from the player, rather than get all onscreen
 ---@return instance[]
 function api_get_flowers(radius)  end
 
@@ -88,9 +88,9 @@ function api_get_key_down(key_label)  end
 function api_get_key_pressed(key_label)  end
 
 ---
----@param radius number [Optional] if specified this method will get all objects within this radius from the player, rather than get all onscreen
----@param oid string [Optional] if specified this method will only return objs with a matching oid
----@param coordinate coordinate [Optional] if using a radius, this allows you specify the center point to use. If not given, will default to the player
+---@param radius number? [Optional] if specified this method will get all objects within this radius from the player, rather than get all onscreen
+---@param oid string? [Optional] if specified this method will only return objs with a matching oid
+---@param coordinate coordinate? [Optional] if using a radius, this allows you specify the center point to use. If not given, will default to the player
 ---@return instance[]
 function api_get_menu_objects(radius, oid, coordinate)  end
 
@@ -112,9 +112,9 @@ function api_get_mouse_position()  end
 function api_get_mouse_tile_position()  end
 
 ---
----@param radius number [Optional] if specified this method will get all objects within this radius from the player, rather than get all onscreen
----@param oid string [Optional] if specified this method will only return objs with a matching oid
----@param coordinate coordinate [Optional] if using a radius, this allows you specify the center point to use. If not given, will default to the player
+---@param radius number? [Optional] if specified this method will get all objects within this radius from the player, rather than get all onscreen
+---@param oid string? [Optional] if specified this method will only return objs with a matching oid
+---@param coordinate coordinate? [Optional] if using a radius, this allows you specify the center point to use. If not given, will default to the player
 ---@return instance[]
 function api_get_objects(radius, oid, coordinate)  end
 
@@ -168,7 +168,7 @@ function api_get_sprite(oid)  end
 function api_get_time()  end
 
 ---
----@param radius number [Optional] if specified this method will get all objects within this radius from the player, rather than get all onscreen
+---@param radius number? [Optional] if specified this method will get all objects within this radius from the player, rather than get all onscreen
 ---@return instance[]
 function api_get_trees(radius)  end
 

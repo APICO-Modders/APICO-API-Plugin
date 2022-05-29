@@ -84,7 +84,7 @@ function api_set_spawn(px, py)  end
 
 ---
 ---@param time string | "'dawn_start'" | "'dawn_mid'" | "'day_start'" | "'dusk_start'" | "'dusk_mid'" | "'night_start'" | "'night_end'"
----@param raw_ms number [Optional] instead of a preset you can set a raw time in ms
+---@param raw_ms number? [Optional] instead of a preset you can set a raw time in ms
 ---@return string|nil If this method worked it will return Success, otherwise if it fails it will return nil and will log an error in the Modding Console.
 function api_set_time(time, raw_ms)  end
 

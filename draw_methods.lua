@@ -9,8 +9,8 @@ function api_draw_button(button_id, show_text)  end
 ---@param cy number the y position to draw at (this will be at the centre of the circle)
 ---@param rad number the radius of the circle
 ---@param outline boolean whether to draw an outline instead of a filled circle
----@param col string [Optional] the color key to use for this circle color, either one you defined with api_define_color() or a name from the colors_ref.json game file, defaults to white if not specified
----@param alpha number [Optional] the alpha level to draw with (number between 0-1)
+---@param col string? [Optional] the color key to use for this circle color, either one you defined with api_define_color() or a name from the colors_ref.json game file, defaults to white if not specified
+---@param alpha number? [Optional] the alpha level to draw with (number between 0-1)
 ---@return void
 function api_draw_circle(cx, cy, rad, outline, col, alpha)  end
 
@@ -19,8 +19,8 @@ function api_draw_circle(cx, cy, rad, outline, col, alpha)  end
 ---@param y1 number the y position to start the line at
 ---@param x2 number the x position to end the line at
 ---@param y2 number the y position to end the line at
----@param col string [Optional] the color key to use for this circle color, either one you defined with api_define_color() or a name from the colors_ref.json game file, defaults to white if not specified
----@param alpha number [Optional] the alpha level to draw with (number between 0-1)
+---@param col string? [Optional] the color key to use for this circle color, either one you defined with api_define_color() or a name from the colors_ref.json game file, defaults to white if not specified
+---@param alpha number? [Optional] the alpha level to draw with (number between 0-1)
 ---@return void
 function api_draw_line(x1, y1, x2, y2, col, alpha)  end
 
@@ -31,7 +31,7 @@ function api_draw_line(x1, y1, x2, y2, col, alpha)  end
 ---@param y2 number the bottom y position of the rectangle
 ---@param col string the color key to use for this circle color, either one you defined with api_define_color() or a name from the colors_ref.json game file, defaults to white if set as nil
 ---@param outline boolean whether to draw an outline instead of a filled rectangle
----@param alpha number [Optional] the alpha level to draw with (number between 0-1)
+---@param alpha number? [Optional] the alpha level to draw with (number between 0-1)
 ---@return void
 function api_draw_rectangle(x1, y1, x2, y2, col, outline, alpha)  end
 
@@ -78,8 +78,8 @@ function api_draw_sprite_ext(sprite_ref, frame, sx, sy, x_scale, y_scale, rot, c
 ---@param ty number the y position to draw at
 ---@param text string the text to draw, can use | to go to a new line if tw is set
 ---@param card boolean whether to show a card background behind the text (like tooltips)
----@param col string [Optional] the color key to use for this circle color, either one you defined with api_define_color() or a name from the colors_ref.json game file, defaults to white if not specified
----@param tw number [Optional] a width to apply to the text, causing extra text to wrap onto the next line
+---@param col string? [Optional] the color key to use for this circle color, either one you defined with api_define_color() or a name from the colors_ref.json game file, defaults to white if not specified
+---@param tw number? [Optional] a width to apply to the text, causing extra text to wrap onto the next line
 ---@return void
 function api_draw_text(tx, ty, text, card, col, tw)  end
 
