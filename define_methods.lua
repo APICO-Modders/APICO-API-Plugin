@@ -165,7 +165,7 @@ function api_define_sprite(sprite_name, sprite_image, frames)  end
 ---@param tank_size string | "'small'" | "'medium'" | "'large'" | "'xlarge'"
 ---@param tank_script string? [Optional] the name of the function you want to call when the tank is clicked on - must be defined in your mod
 ---@return string|nil If this method worked it will return Success, otherwise if it fails it will return nil and will log an error in the Modding Console.
-function api_define_tank(trait_key, trait_map, default_value)  end
+function api_define_tank(menu_id, tank_amount, tank_max, tank_type, tx, ty, tank_size, tank_script)  end
 
 ---
 ---@param trait_key string the name of this trait, will be prepended with your mod id
