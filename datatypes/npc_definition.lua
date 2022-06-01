@@ -7,5 +7,5 @@
 ---@field stock string[] a list of up to 10 item oids that this NPC will have as it's shop stock
 ---@field greeting string the default greeting message shown in the dialogue menu when it opens
 ---@field dialogue string[] a list of dialogue to show one after the other when a player clicks the "talk" button
----@field walking boolean [Optional] whether this NPC will walk around or stay still
----@field shop boolean [Optional] whether this NPC will have a shop or just be dialogue only
+---@field walking boolean @[Optional] whether this NPC will walk around or stay still
+---@field shop boolean @[Optional] whether this NPC will have a shop or just be dialogue only

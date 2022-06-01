@@ -17,5 +17,5 @@
 ---@field chance number the chance this bee can be formed when it's the mutation for a hybrid
 ---@field requirement string the requirement for how this bee can be formed when it's the mutation for a hybrid, shown in the Predictor
 ---@field bid string a unique 2 character identifier for this species to use for the beebox / beebank storage. The identifier cannot be a number, i.e. 01 as these are reserved by the base game. This must be unique across all mods, so ask your fellow modders first!
----@field calming string[] [Optional] if this species is grumpy, you can provide a list of flower oids that calm it
----@field tier number [Optional] the tier this bee should belond to, if there is room. Should be a number between 1-5, if no room is in the given tier it'll try the next tier up until it defaults to 5
+---@field calming string[] @[Optional] if this species is grumpy, you can provide a list of flower oids that calm it
+---@field tier number @[Optional] the tier this bee should belond to, if there is room. Should be a number between 1-5, if no room is in the given tier it'll try the next tier up until it defaults to 5

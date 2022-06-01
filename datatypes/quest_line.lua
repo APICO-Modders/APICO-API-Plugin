@@ -1,5 +1,5 @@
 ---@class quest_line
 ---@field text string the text for this line
----@field color string [Optional] the color key for the text, defaults to "FONT_BOOK"
----@field gif string [Optional] instead of text you can show a sprite by specifying the oid of the sprite. The sprite should have a width of 148 pixels and a height of either 46, 66, or 86 pixels.
----@field width number [Optional] if a gif is specified this sets the height of the gif, should be 46, 66, or 86
+---@field color string @[Optional] the color key for the text, defaults to "FONT_BOOK"
+---@field gif string @[Optional] instead of text you can show a sprite by specifying the oid of the sprite. The sprite should have a width of 148 pixels and a height of either 46, 66, or 86 pixels.
+---@field width number @[Optional] if a gif is specified this sets the height of the gif, should be 46, 66, or 86

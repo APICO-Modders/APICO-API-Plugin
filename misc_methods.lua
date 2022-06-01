@@ -1,17 +1,14 @@
 ---
 ---@param slot_id number the slot id of the slot you want to move the contents for
 ---@param menu_id number the menu id of the menu inst you want to try and move the slot contents to
----@return void
 function api_add_slot_to_menu(slot_id, menu_id)  end
 
 ---
 ---@param oid string the object oid you want to blacklist from input, should be a menu_object oid
----@return void
 function api_blacklist_input(oid)  end
 
 ---
 ---@param oid string the item oid you want to check discovery for
----@return void
 function api_check_discovery(oid)  end
 
 ---

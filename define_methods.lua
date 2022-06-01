@@ -73,7 +73,7 @@ function api_define_gif(gif_name, gif_image, frames)  end
 ---@param gui_oy number the relative y position of the gui from the top-left of the menu sprite
 ---@param gui_hover string the name of the function you want to call when the gui is hovered to return tooltip text - must be defined in your mod
 ---@param sprite_image string relative path of the sprite you want to use for the gui, can be any size but needs to have 3 frames (highlighted, stencil, progress block)
----@param gui_clicked string? [Optional] the name of the function you want to call when the gui is clicked on - must be defined in your mod
+---@param gui_clicked string? @[Optional] the name of the function you want to call when the gui is clicked on - must be defined in your mod
 ---@return string|nil If this method worked it will return Success, otherwise if it fails it will return nil and will log an error in the Modding Console.
 function api_define_gui(menu_id, gui_key, gui_ox, gui_oy, gui_hover, sprite_image, gui_clicked)  end
 
@@ -88,7 +88,7 @@ function api_define_item(item_def, sprite_image)  end
 ---@param sprite_image string relative path of the sprite you want to use for the menu object, should be a 64x16 image with 4 frames (normal, normal highlighted, undiscovered, undiscovered highlight)
 ---@param menu_image string relative path of the sprite you want to use for the menu itself, can be any size but needs to have 4 frames (normal, highlighted, dragging, help overlay)
 ---@param scripts scripts a scripts definition for all the scripts you want your menu object to run
----@param draw_script string? [Optional] if specified this allows you to override the default object draw (overworld object) with your own draw script - this must be a method in your mod, and won't be called if you set the obj_definition "invisible" property to true
+---@param draw_script string? @[Optional] if specified this allows you to override the default object draw (overworld object) with your own draw script - this must be a method in your mod, and won't be called if you set the obj_definition "invisible" property to true
 ---@return string|nil If this method worked it will return Success, otherwise if it fails it will return nil and will log an error in the Modding Console.
 function api_define_menu_object(menu_def, sprite_image, menu_image, scripts, draw_script)  end
 
@@ -115,7 +115,7 @@ function api_define_npc(npc_def, standing_sprite, standing_h_sprite, walking_spr
 ---
 ---@param object_def obj_definition an obj definition table
 ---@param sprite_image string relative path to the sprite you want to use for this object, should be a 64x16 image with 4 frames (normal, normal highlighted, undiscovered, undiscovered highlight)
----@param draw_script string? [Optional] if specified this allows you to override the default object draw with your own draw script - this must be a method in your mod, and won't be called if you set the obj_definition "invisible" property to true
+---@param draw_script string? @[Optional] if specified this allows you to override the default object draw with your own draw script - this must be a method in your mod, and won't be called if you set the obj_definition "invisible" property to true
 ---@return string|nil If this method worked it will return Success, otherwise if it fails it will return nil and will log an error in the Modding Console.
 function api_define_object(object_def, sprite_image, draw_script)  end
 
@@ -144,7 +144,7 @@ function api_define_quest(quest_def, page1, page2)  end
 ---@param tab string | "'crafting'" | "'tools'" | "'beekeeping'" | "'decoration'" | "'painting'"
 ---@param item string the item oid that you want this recipe to be for
 ---@param recipe recipe a recipe definition you want to use
----@param amount number? [Optional] if specified, when crafting this recipe the player will get this amount instead of 1
+---@param amount number? @[Optional] if specified, when crafting this recipe the player will get this amount instead of 1
 ---@return string|nil If this method worked it will return Success, otherwise if it fails it will return nil and will log an error in the Modding Console.
 function api_define_recipe(tab, item, recipe, amount)  end
 
@@ -163,7 +163,7 @@ function api_define_sprite(sprite_name, sprite_image, frames)  end
 ---@param tx number the x position of this tank relative to the menu's top-left corner
 ---@param ty number the y position of this tank relative to the menu's top-left corner
 ---@param tank_size string | "'small'" | "'medium'" | "'large'" | "'xlarge'"
----@param tank_script string? [Optional] the name of the function you want to call when the tank is clicked on - must be defined in your mod
+---@param tank_script string? @[Optional] the name of the function you want to call when the tank is clicked on - must be defined in your mod
 ---@return string|nil If this method worked it will return Success, otherwise if it fails it will return nil and will log an error in the Modding Console.
 function api_define_tank(menu_id, tank_amount, tank_max, tank_type, tx, ty, tank_size, tank_script)  end
 

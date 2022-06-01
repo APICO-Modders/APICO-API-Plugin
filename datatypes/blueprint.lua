@@ -4,4 +4,4 @@
 ---@field x number the y position in the world to put this blueprint
 ---@field y number the y position in the world to put this blueprint
 ---@field type string the type of biome to set for this blueprint | "'forest'" | "'swamp'" | "'snow'" | "'hallow'"
----@field dye number [Optional] set a dye to apply to the land and nature items, valid number between 1-16
+---@field dye number @[Optional] set a dye to apply to the land and nature items, valid number between 1-16

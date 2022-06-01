@@ -9,12 +9,12 @@
 ---@field layout layout[] a list of layouts to set the slots for this objects menu
 ---@field info info[] a list of information to show when the menu help button is pressed
 ---@field buttons string[] a list of buttons for this objects menu to have | "'Help'" | "'Target'" | "'Sort'" | "'Move'" | "'Close'"
----@field machines string[] [Optional] a list of object oids that this object this can be used in
----@field tools string[] [Optional] a list of tools that can be used on this object
----@field nature boolean [Optional] this specifies if the object can only be placed on grass
----@field aquatic boolean [Optional] this specifies if the object can only be placed on shallow water
----@field deep boolean [Optional] this specifies if the object can only be placed on deep water
----@field singular boolean [Optional] this specifies if the object can stack or can only be singular, like frames or bees
----@field invisible boolean [Optional] if true, this object will not be drawn - it's bounding box will still be interactive though!
----@field center boolean [Optional] if true, when this object's menu opens it will automatically be put in the center of the screen
----@field item_sprite string [Optional] if you have an object that's overworld sprite is bigger than 16x16, you can use this to specify an alternate sprite to use as the item + slot sprite
+---@field machines string[] @[Optional] a list of object oids that this object this can be used in
+---@field tools string[] @[Optional] a list of tools that can be used on this object
+---@field nature boolean @[Optional] this specifies if the object can only be placed on grass
+---@field aquatic boolean @[Optional] this specifies if the object can only be placed on shallow water
+---@field deep boolean @[Optional] this specifies if the object can only be placed on deep water
+---@field singular boolean @[Optional] this specifies if the object can stack or can only be singular, like frames or bees
+---@field invisible boolean @[Optional] if true, this object will not be drawn - it's bounding box will still be interactive though!
+---@field center boolean @[Optional] if true, when this object's menu opens it will automatically be put in the center of the screen
+---@field item_sprite string @[Optional] if you have an object that's overworld sprite is bigger than 16x16, you can use this to specify an alternate sprite to use as the item + slot sprite

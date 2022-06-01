@@ -6,11 +6,11 @@
 ---@field hint string the hint to show in the book when this species hasn't been discovered yet
 ---@field desc string the description to show in the book when this species has been discovered
 ---@field aquatic boolean whether this flower can be planted / grow on shallow water
----@field deep boolean [Optional] whether this flower can be planted / grow on deep water
----@field shop_buy number [Optional] the amount this flower can be bought for if sold by an NPC
----@field shop_sell number [Optional] the amount this flower can be sold for at an NPC
----@field machines string[] [Optional] a list of object oids that this flower can be used in
----@field tools string[] [Optional] a list of tools that can be used on this flower,
----@field variants number [Optional] specifies the number of variants in your sprite image, defaults to 1
----@field chance number [Optional] the chance this species will be formed as a mutation, defaults to 100
----@field smoker string[] [Optional] a list of bee species that this flower can be used to calm in a smoker
+---@field deep boolean @[Optional] whether this flower can be planted / grow on deep water
+---@field shop_buy number @[Optional] the amount this flower can be bought for if sold by an NPC
+---@field shop_sell number @[Optional] the amount this flower can be sold for at an NPC
+---@field machines string[] @[Optional] a list of object oids that this flower can be used in
+---@field tools string[] @[Optional] a list of tools that can be used on this flower,
+---@field variants number @[Optional] specifies the number of variants in your sprite image, defaults to 1
+---@field chance number @[Optional] the chance this species will be formed as a mutation, defaults to 100
+---@field smoker string[] @[Optional] a list of bee species that this flower can be used to calm in a smoker
