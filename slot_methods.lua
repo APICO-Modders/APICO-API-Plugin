@@ -38,7 +38,7 @@ function api_slot_item_id(menu_id, slot_index)  end
 ---@param menu_id number the menu instance you want to find matches on
 ---@param match string[] a list of item values you want to match on, can be an item oid, "ANY" (for any item), or "" for blank
 ---@param first_only boolean? @[Optional] if true, this method will return the first slot only rather than a list of matches
----@return instance|instance[]|nil If first_only is true will return instance if one found or nil if not found and if first_only false will return a list of instances empty if none found.
+---@return slot|slot[]|nil If first_only is true will return instance if one found or nil if not found and if first_only false will return a list of instances empty if none found.
 function api_slot_match(menu_id, match, first_only)  end
 
 ---
@@ -46,7 +46,7 @@ function api_slot_match(menu_id, match, first_only)  end
 ---@param match string[] a list of item values you want to match on, can be an item oid, "ANY" (for any item), or "" for blank
 ---@param range number[] a list of slot indexes to check. Indices start at 1 like LUA lists do
 ---@param first_only boolean? @[Optional] if true, this method will return the first slot only rather than a list of matches
----@return instance|instance[]|nil If first_only is true will return instance if one found or nil if not found and if first_only false will return a list of instances empty if none found.
+---@return slot|slot[]|nil If first_only is true will return instance if one found or nil if not found and if first_only false will return a list of instances empty if none found.
 function api_slot_match_range(menu_id, match, range, first_only)  end
 
 ---
