@@ -15,6 +15,9 @@
 ---@field singular boolean @[Optional] if specified, objects created with this definition will not be able to stack, like frames
 ---@field honeycore boolean @[Optional] if true, this objects will be bought + sold for honeycore instead of rubees
 ---@field invisible boolean @[Optional] if true, this object will not be drawn - it's bounding box will still be interactive though!
+---@field bed boolean @[Optional] if true, this object will act as a bed when clicked
+---@field bench boolean @[Optional] if true, this object will act as a bench when clicked
+---@field has_lighting boolean @[Optional] if true, this object will light up at night
 ---@field has_shadow boolean @[Optional] if true, a shadow will be automatically drawn under this object
 ---@field pickable boolean @[Optional] if true, you'll be able to pick up this item with the mouse
 ---@field variants number @[Optional] for nature objects, like trees, this specifies the amount of variants within the sprite for the object

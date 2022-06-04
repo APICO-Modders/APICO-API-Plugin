@@ -173,3 +173,10 @@ function api_define_tank(menu_id, tank_amount, tank_max, tank_type, tx, ty, tank
 ---@param default_value string[] a value (or values) to use for any species not in the trait_map, or for any existing bee items when they're bred later
 ---@return string|nil If this method worked it will return Success, otherwise if it fails it will return nil and will log an error in the Modding Console.
 function api_define_trait(trait_key, trait_map, default_value)  end
+
+---
+---@since 1.3.0
+---@param validation string the custom validation, i.e. "customX:axe" - this has to match what you put in your layout
+---@param icon_sprite string the sprite to use for the validation, shown on slot hover. This should be a single 16x16 sprite.
+---@return string|nil If this method worked it will return Success, otherwise if it fails it will return nil and will log an error in the Modding Console.
+function api_define_validation_icon(validation, icon_sprite) end

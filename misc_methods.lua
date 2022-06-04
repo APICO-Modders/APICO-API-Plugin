@@ -70,3 +70,12 @@ function api_unlock_quest(quest_id)  end
 ---@since 1.2.0
 ---@return boolean returns if the game is paused or not.
 function api_is_game_paused()  end
+
+---
+---@since 1.3.0
+---@param url string the full URL to send the HTTP request to
+---@param method_type string the HTTP method type, i.e. GET or POST
+---@param headers table a map of headers to apply to your request
+---@param body string a body to send with the request (can just be an empty string)
+------@return string|nil If this method worked it will return Success, otherwise if it fails it will return nil and will log an error in the Modding Console.
+function api_http_request(url, method_type, headers, body) end

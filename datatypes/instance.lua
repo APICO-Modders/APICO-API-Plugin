@@ -2,8 +2,10 @@
 ---@field id number the GMS id for this instance, to use in API methods
 ---@field x number the x position of this inst
 ---@field y number the y position of this inst
----@field oid string the APICO "id" value used with the Dictionary
+---@field oid string the APICO "id" value used with the Dictionary - will be nil on item/slot instances
 ---@field sprite_index number the sprite image id used for this instance
 ---@field image_index number the sprite image "frame" currently set for this instance
+---@field image_xscale number image xscale used in rendering, i.e. -1 to flip vertically
+---@field image_yscale number image yscale used in rendering, i.e. -1 to flip horizontally
 ---@field menu_id number the menu instance for this instance - will be nil if not a menu object instance
 ---@field slots slot[] a list of slot instances - will be nil if not a menu instance

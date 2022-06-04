@@ -15,3 +15,4 @@
 ---@field durability boolean @[Optional] if specified, items created with this definition will have a durability, like tools
 ---@field obj string @[Optional] if placeable, this specifies the object oid that will be created when the item is used
 ---@field honeycore boolean @[Optional] if true, this item will be bought + sold for honeycore instead of rubees
+---@field bee_lore string @[Optional] if set, this will be used as the "lore" in the bee book if this item is a bee's special produce
