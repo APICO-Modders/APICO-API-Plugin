@@ -1,0 +1,5 @@
+---@class wall_definition
+---@field id string id to use to create an oid for this item. Unless defining a flower, your new item oid will be a your mod_id + the item id give, i.e. "sample_mod_my_item"
+---@field name string the name of this item, shown in tooltips
+---@field shop_buy number? @[Optional] the amount this item can be bought for if sold by an NPC
+---@field shop_sell number? @[Optional] the amount this item can be sold for at an NPC

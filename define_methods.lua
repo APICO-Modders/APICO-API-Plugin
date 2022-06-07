@@ -180,3 +180,10 @@ function api_define_trait(trait_key, trait_map, default_value)  end
 ---@param icon_sprite string the sprite to use for the validation, shown on slot hover. This should be a single 16x16 sprite.
 ---@return string|nil If this method worked it will return Success, otherwise if it fails it will return nil and will log an error in the Modding Console.
 function api_define_validation_icon(validation, icon_sprite) end
+
+---
+---@since 1.3.0
+---@param wall wall_definition definition for your new wall
+---@param wall_sprite string the spritesheet for the new wall, needs to contain both the item sprites and wall variants, see the example in the Sample Mod
+---@return string|nil If this method worked it will return Success, otherwise if it fails it will return nil and will log an error in the Modding Console.
+function api_define_wall(wall, wall_sprite) end
