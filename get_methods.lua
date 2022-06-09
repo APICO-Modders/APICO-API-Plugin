@@ -174,3 +174,8 @@ function api_get_trees(radius)  end
 ---
 ---@return weather
 function api_get_weather()  end
+
+---
+---@since 1.3.1
+---@return string returns a 2 letter language code, current options: [en, fr, it, de, es, br, jp]
+function api_get_language() end

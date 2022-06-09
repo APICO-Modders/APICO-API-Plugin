@@ -12,6 +12,7 @@
 ---@field place_water boolean @[Optional] this specifies if the object can only be placed on shallow water
 ---@field place_deep boolean @[Optional] this specifies if the object can only be placed on deep water
 ---@field durability boolean @[Optional] if specified, object created with this definition will have a durability, like tools
+---@field hp boolean @[Optional] if specified, object created will have health, likes trees (this is NOT the same as durability)
 ---@field singular boolean @[Optional] if specified, objects created with this definition will not be able to stack, like frames
 ---@field honeycore boolean @[Optional] if true, this objects will be bought + sold for honeycore instead of rubees
 ---@field invisible boolean @[Optional] if true, this object will not be drawn - it's bounding box will still be interactive though!

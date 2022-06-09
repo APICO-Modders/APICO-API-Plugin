@@ -79,3 +79,6 @@ function api_is_game_paused()  end
 ---@param body string a body to send with the request (can just be an empty string)
 ---@return string|nil If this method worked it will return Success, otherwise if it fails it will return nil and will log an error in the Modding Console.
 function api_http_request(url, method_type, headers, body) end
+
+---@since 1.3.1
+function api_refresh_tooltip() end

@@ -137,8 +137,9 @@ function api_dp(inst_id, prop_name, prop_value)  end
 ---@param quest_def quest_definition the quest definition table you want to use
 ---@param page1 quest_line[] the lines for the left-hand side quest page
 ---@param page2 quest_definition[] the lines for the right-hand side quest page
+---@param claim_script string? @[Optional] call a script when the quest is completed
 ---@return string|nil If this method worked it will return Success, otherwise if it fails it will return nil and will log an error in the Modding Console.
-function api_define_quest(quest_def, page1, page2)  end
+function api_define_quest(quest_def, page1, page2, claim_script)  end
 
 ---
 ---@param tab string | "'crafting'" | "'tools'" | "'beekeeping'" | "'decoration'" | "'painting'"
