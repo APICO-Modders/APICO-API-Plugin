@@ -14,3 +14,4 @@
 ---@field variants number @[Optional] specifies the number of variants in your sprite image, defaults to 1
 ---@field chance number @[Optional] the chance this species will be formed as a mutation, defaults to 100
 ---@field smoker string[] @[Optional] a list of bee species that this flower can be used to calm in a smoker
+---@field has_lighting boolean @[Optional] if true, the flower will light up at night like Pondshine

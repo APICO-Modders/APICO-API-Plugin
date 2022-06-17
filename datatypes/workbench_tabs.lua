@@ -1,0 +1,6 @@
+---@class workbench_tabs
+---@field t1 string
+---@field t2 string
+---@field t3 string
+---@field t4 string
+---@field t5 string

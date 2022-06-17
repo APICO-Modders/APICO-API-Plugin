@@ -188,3 +188,30 @@ function api_define_validation_icon(validation, icon_sprite) end
 ---@param wall_sprite string the spritesheet for the new wall, needs to contain both the item sprites and wall variants, see the example in the Sample Mod
 ---@return string|nil If this method worked it will return Success, otherwise if it fails it will return nil and will log an error in the Modding Console.
 function api_define_wall(wall, wall_sprite) end
+
+---
+---@since 1.4.0
+---@param label string label to show for your mod in the Mod Workbench
+---@param tabs workbench_tabs a table with 5 keys, "t1", "t2", "t3", "t4", "t5". each key should have a string value that will be displayed when that tab is hovered.
+---@return string|nil If this method worked it will return Success, otherwise if it fails it will return nil and will log an error in the Modding Console.
+function api_define_workbench(label, tabs) end
+
+---
+---@since 1.4.0
+---@param oid string the oid of the item to define default stats for
+---@param stats table the stats to give to an item when created if it has the given oid
+function api_define_item_stats(oid, stats) end
+
+---
+---@since 1.4.0
+---@param window window_definition definition for your new window
+---@param window_sprite string the spritesheet for the new window, should be 5 frames (16x16), the first 4 like a normal item/obj sprite, the 5th frame is what will be drawn onto the wall when placed down
+function api_define_window(window, window_sprite) end
+
+---
+---@since 1.4.0
+---@param name string the name of the liquid to use, this will be shown in tooltips and be set as the liquid "type" in stats
+---@param color string a color name to use for the liquid, this can be a default one or your own that you defined with api_define_color()
+---@param texture_sprite string the path to a single 37x34px image used as the liquid "texture". This will be drawn at 50% alpha on top of any tanks with your liquid in it, to help identify your liquid without color
+---@param preview_sprite string the path to a single 12x12px image used as the liquid preview when hovering over machines with a tank containing your liquid - this should be a solid filled in image (i.e. your color + your texture combined)
+function api_define_liquid(name, color, texture_sprite, preview_sprite) end

@@ -1,0 +1,5 @@
+---@class window_definition
+---@field id string id to use to create an oid for this item, must be unique across all mods (i.e. window90001)
+---@field name string the name of this item, shown in tooltips
+---@field shop_buy boolean @[Optional] the amount this item can be bought for if sold by an NPC
+---@field shop_sell boolean @[Optional] the amount this item can be sold for at an NPC
