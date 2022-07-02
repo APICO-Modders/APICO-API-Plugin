@@ -82,3 +82,9 @@ function api_http_request(url, method_type, headers, body) end
 
 ---@since 1.3.1
 function api_refresh_tooltip() end
+
+---@since 1.4.2
+---@param text string the text to draw
+---@param tw number? @[Optional] a width to apply to the text, causing extra text to wrap onto the next line
+---@return measure
+function api_measure_text(text, tw) end

@@ -52,3 +52,13 @@ function api_create_obj(oid, x, y)  end
 ---@param arg2 any? @[Optional] an argument to pass into the callback
 ---@param arg3 any? @[Optional] an argument to pass into the callback
 function api_create_timer(method, seconds, arg1, arg2, arg3)  end
+
+---
+---@since 1.4.2
+---@param type string the layer the lightweight should be drawn on, options are tile (above tiles but below objects), obj (above objects), or gui (above menus). This cannot be changed later
+---@param sprite_ref number the sprite index to use for drawing, needs to be the actual index not a string
+---@param frame number the frame of the sprite to draw (see Instance Properties for how to update this later)
+---@param x number the x position to create the lightweight at
+---@param y number the y position to create the lightweight at
+---@return number returns instance id of lightweight
+function api_create_lightweight(type, sprite_ref, frame, x, y)  end

@@ -1,0 +1,3 @@
+---@class measure
+---@field width number the width of the text will take up when drawn
+---@field height number the height of the text will take up when drawn
