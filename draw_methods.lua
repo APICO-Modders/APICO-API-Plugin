@@ -7,10 +7,10 @@ function api_draw_button(button_id, show_text)  end
 ---@param cx number the x position to draw at (this will be at the centre of the circle)
 ---@param cy number the y position to draw at (this will be at the centre of the circle)
 ---@param rad number the radius of the circle
----@param outline boolean whether to draw an outline instead of a filled circle
 ---@param col string? @[Optional] the color key to use for this circle color, either one you defined with api_define_color() or a name from the colors_ref.json game file, defaults to white if not specified
+---@param outline boolean whether to draw an outline instead of a filled circle
 ---@param alpha number? @[Optional] the alpha level to draw with (number between 0-1)
-function api_draw_circle(cx, cy, rad, outline, col, alpha)  end
+function api_draw_circle(cx, cy, rad, col, outline, alpha)  end
 
 ---
 ---@param x1 number the x position to start the line at
