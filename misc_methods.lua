@@ -88,3 +88,19 @@ function api_refresh_tooltip() end
 ---@param tw number? @[Optional] a width to apply to the text, causing extra text to wrap onto the next line
 ---@return measure
 function api_measure_text(text, tw) end
+
+---
+---@since 2.1.0
+---@return table returns a table of the current players progress
+function api_get_progress() end
+
+---@since 2.1.0
+---@return table contain a key for game_paused, game_saving, game_loading, and world_loading
+function api_game_state() end
+
+---@since 2.1.0
+---@param x number x position to check
+---@param y number y position to check
+---@param incense_oid string he oid of the incense you want to check for
+---@return boolean
+function api_has_incense(x, y, incense_oid) end

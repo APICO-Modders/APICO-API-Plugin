@@ -1,0 +1,3 @@
+---@class dialoguetree
+---@field A dialogue the first dialogue option an NPC has
+---@field * dialogue as long as you have an "A" you can add as many new sections as you like

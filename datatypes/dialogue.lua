@@ -1,0 +1,4 @@
+---@class dialogue
+---@field P string the prompt the player will see for this dialogue section
+---@field D string[] a list of dialogue strings that will represent "screens" of dialogue the player can click through
+---@field A string[] a list of dialogue actions to match each of the dialogue "screens" - you need to match the number of strings in D.

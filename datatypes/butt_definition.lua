@@ -1,0 +1,17 @@
+---@class butt_definition
+---@field id string lowercase unique name for your butterfly
+---@field title string name of your butterfly for tooltips + books
+---@field latin string the latin name for your butterfly, shown in the book
+---@field hint string the hint to show in the book when this species hasn't been discovered yet
+---@field desc string the description to show in the book when this species has been discovered
+---@field biome string the biome this butterfly spawns in, valid options are Forest, Swamp, Snow, Hallow, and Devland
+---@field lifespan number a lifespan value to use for the butterfly, chrysalis lifespan is always half the butterfly species
+---@field behaviour string a behaviour trait this species will spawn with, valid options are Diurnal, Nocturnal, Crepuscular, Cathemeral
+---@field climate string a climate trait this species will spawn with, valid options are Temperate, Tropic, Polar, Any
+---@field rainlover boolean whether this species likes rain
+---@field snowlover boolean whether this species likes snow
+---@field flora string the OID of the specific flora item that this butterfly's caterpiller will eat as food
+---@field flowers string[] a list of two flower OIDs that will represent the flower "likes" a butterfly has
+---@field chance number the chance this butterfly will spawn naturally if the conditions are met
+---@field named boolean whether this butterfly is a "named" species - named species will not get "Butterfly" appended to their species nam
+

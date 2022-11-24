@@ -33,3 +33,9 @@ function api_describe_oids(mods) end
 ---@param mods boolean if true will return results for mods instead of the base game
 ---@return table
 function api_describe_recipes(mods) end
+
+---
+---@since 2.1.0
+---@param mods boolean if true will return results for mods instead of the base game
+---@return table
+function api_describe_butterflies(mods) end

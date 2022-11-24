@@ -62,3 +62,10 @@ function api_create_timer(method, seconds, arg1, arg2, arg3)  end
 ---@param y number the y position to create the lightweight at
 ---@return number returns instance id of lightweight
 function api_create_lightweight(type, sprite_ref, frame, x, y)  end
+
+---
+---@since 2.1.0
+---@param species string the species of butterfly to spawn
+---@param weather string he type of weather for this butterfly - once the game weather no-longer matches what you pass in, the butterfly will despawn. Values allowed are snow, rain or an empty string
+---@param inst_id number the instance to spawn the butterfly on, can be a flower, tree, generic obj, menu obj, or a wall
+function api_create_butterfly(species, weather, inst_id)  end

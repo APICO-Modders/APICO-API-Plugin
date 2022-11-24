@@ -84,6 +84,7 @@ function api_define_gui(menu_id, gui_key, gui_ox, gui_oy, gui_hover, sprite_imag
 function api_define_item(item_def, sprite_image)  end
 
 ---
+---@deprecated use api_define_menu_object2 instead
 ---@param menu_def menu_definition the menu definition table to use
 ---@param sprite_image string relative path of the sprite you want to use for the menu object, should be a 64x16 image with 4 frames (normal, normal highlighted, undiscovered, undiscovered highlight)
 ---@param menu_image string relative path of the sprite you want to use for the menu itself, can be any size but needs to have 4 frames (normal, highlighted, dragging, help overlay)
@@ -99,6 +100,7 @@ function api_define_menu_object(menu_def, sprite_image, menu_image, scripts, dra
 function api_define_notification(notification_type, notification_script)  end
 
 ---
+---@deprecated use api_define_npc2 instead
 ---@param npc_def npc_definition the definition obj for your NPC
 ---@param standing_sprite string relative path to the sprite you want to use for the NPC standing animation, should be a 36x18 image with 2 frames (standing, standing_bob)
 ---@param standing_h_sprite string relative path to the sprite you want to use for the NPC when standing and highlighted, should be a 36x18 image with 2 frames (standing, standing_bob)
@@ -215,3 +217,60 @@ function api_define_window(window, window_sprite) end
 ---@param texture_sprite string the path to a single 37x34px image used as the liquid "texture". This will be drawn at 50% alpha on top of any tanks with your liquid in it, to help identify your liquid without color
 ---@param preview_sprite string the path to a single 12x12px image used as the liquid preview when hovering over machines with a tank containing your liquid - this should be a solid filled in image (i.e. your color + your texture combined)
 function api_define_liquid(name, color, texture_sprite, preview_sprite) end
+
+---
+---@since 2.1.0
+---@param sbee_def sbee_definition the solitary bee definition to be used to create the new species
+---@param bee_sprite_image string relative path of the sprite you want to use for the bee item, should be a 72x18 image with 4 frames (normal, normal highlighted, undiscovered, undiscovered highlight)
+---@param bee_shiny_image string relative path of the sprite you want to use for the shiny variant, should be a 380x18 image with 20 frames for a shine animation
+---@param bee_hd_image string relative path of the sprite you want to use for the "HD" bee image in the book, should be a 96x48 image with 2 frames (normal, undiscovered)
+---@param bee_color color a color to use for the bee, used in the book, predictor, and the discovery popup
+---@param bee_letter_image string relative path of the sprite you want to use for the bee's letter item, should be a 32x16 image with 2 frames (normal, highlighted)
+---@param bee_letter_text string text to show in the letter for this species
+---@return string|nil If this method worked it will return Success, otherwise if it fails it will return nil and will log an error in the Modding Console.
+function api_define_solitary(sbee_def, bee_sprite_image, bee_shiny_image, bee_hd_image, bee_color, bee_letter_image, bee_letter_text) end
+
+---
+---@since 2.1.0
+---@param butt_def butt_definition the solitary bee definition to be used to create the new species
+---@param butt_sprite_image string relative path of the sprite you want to use for the bee item, should be a 72x18 image with 4 frames (normal, normal highlighted, undiscovered, undiscovered highlight)
+---@param butt_golden_image string relative path of the sprite you want to use for the golden variant, should be a 72x18 image with 4 frames (normal, normal highlighted, undiscovered, undiscovered highlight)
+---@param butt_cat_image string relative path of the sprite you want to use for the caterpiller, should be a 18x18 image with 1 frame (normal)
+---@param butt_hd_image string relative path of the sprite you want to use for the "HD" butterfly image in the book, should be a 96x48 image with 2 frames (normal, undiscovered)
+---@param butt_color color a color to use for the butterfly, used in the book
+---@return string|nil If this method worked it will return Success, otherwise if it fails it will return nil and will log an error in the Modding Console.
+function api_define_butterfly(butt_def, butt_sprite_image, butt_golden_image, butt_cat_image, butt_hd_image, butt_color) end
+
+---
+---@since 2.1.0
+---@param item_def item_definition an item definition for your incense using standard definition keys (this is also where "effect" is used in the item_definition)
+---@param sprite_image string relative path to the sprite you want to use for this item, should be a 64x16 image with 4 frames (normal, normal highlighted, undiscovered, undiscovered highlight)
+---@param alchemy_check string a method name defined in your mod code that will be used to check if the combination the player has in their alchemy bench will create your incense. This method will be passed the current incense oid that will be combined currently, along an alchemy_count table
+---@return string|nil If this method worked it will return Success, otherwise if it fails it will return nil and will log an error in the Modding Console.
+function api_define_incense(item_def, sprite_image, alchemy_check) end
+
+---
+---@since 2.1.0
+---@param npc_def npc_definition2 the definition obj for your NPC
+---@param standing_sprite string relative path to the sprite you want to use for the NPC standing animation, should be a 36x18 image with 2 frames (standing, standing_bob)
+---@param standing_h_sprite string relative path to the sprite you want to use for the NPC when standing and highlighted, should be a 36x18 image with 2 frames (standing, standing_bob)
+---@param walking_sprite string relative path to the sprite you want to use for the NPC walk animation, should be a 72x18 image with 4 frames (stand, step_1, stand, step_2)
+---@param walking_h_sprite string relative path to the sprite you want to use for the NPC when walking and highlighted, should be a 72x18 image with 4 frames (stand, step_1, stand, step_2)
+---@param head_sprite string relative path to the sprite you want to use for this NPCs map icon, should be a 18x14 image with 1 frame
+---@param bust_script string relative path to the sprite you want to use for this item, should be a 64x36 image with 2 frames (normal, bought "happy" face)
+---@param item_sprite string relative path to the sprite you want to use for this NPCs item (that you get when you hammer an NPC), should be a 32x16 image with 2 frames (normal, normal highlighted)
+---@param dialogue_bg_sprite string relative path to the sprite you want to use for this NPCs dialogue menu, should be a 48x38 image with 1 frame
+---@param shop_bg_image string relative path of the sprite you want to use for the NPCs shop menu bust background, should be a 39x39 image with 1 frame
+---@param dialogue_check string the name of a script in your mod code that will be called to decide which dialogue options to show
+---@return string|nil If this method worked it will return Success, otherwise if it fails it will return nil and will log an error in the Modding Console.
+function api_define_npc2(npc_def, standing_sprite, standing_h_sprite, walking_sprite, walking_h_sprite, head_sprite, bust_script, item_sprite, dialogue_bg_sprite, shop_bg_image, dialogue_check) end
+
+---
+---@since 2.1.0
+---@param menu_def menu_definition2 the menu definition table to use
+---@param sprite_image string relative path of the sprite you want to use for the menu object, should be a 64x16 image with 4 frames (normal, normal highlighted, undiscovered, undiscovered highlight)
+---@param menu_image string relative path of the sprite you want to use for the menu itself, can be any size but needs to have 2 frames (normal, help overlay)
+---@param scripts scripts a scripts definition for all the scripts you want your menu object to run
+---@param draw_script string? @[Optional]  if specified this allows you to override the default object draw (overworld object) with your own draw script - this must be a method in your mod, and won't be called if you set the obj_definition "invisible" property to true
+---@return string|nil If this method worked it will return Success, otherwise if it fails it will return nil and will log an error in the Modding Console.
+function api_define_menu_object2(menu_def, sprite_image, menu_image, scripts, draw_script)  end

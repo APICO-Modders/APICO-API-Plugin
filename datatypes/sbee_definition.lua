@@ -1,0 +1,15 @@
+---@class sbee_definition
+---@field id string lowercase unique name for your bee
+---@field title string name of your bee for tooltips + books
+---@field latin string the latin name for your bee, shown in the book
+---@field hint string the hint to show in the book when this species hasn't been discovered yet
+---@field desc string the description to show in the book when this species has been discovered
+---@field biome string the biome this bee spawns in, valid options are Forest, Swamp, Snow, Hallow, and Devland
+---@field behaviour string a behaviour trait this species will spawn with, valid options are Diurnal, Nocturnal, Crepuscular, Cathemeral
+---@field climate string a climate trait this species will spawn with, valid options are Temperate, Tropic, Polar, Any
+---@field rainlover boolean whether this species likes rain
+---@field snowlover boolean whether this species likes snow
+---@field produce string the OID of the item this bee will leave as a gift when in habitats
+---@field specials string[] a list of up to two item OIDs that the solitary bee will need along with flora to appear
+---@field chance number the chance this bee will spawn naturally if the conditions are met
+

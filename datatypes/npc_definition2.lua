@@ -1,0 +1,11 @@
+---@class npc_definition2
+---@field id number id to use for the npc, must be unique across all mods
+---@field name string the name of this NPC, shown in tooltips and their dialogue
+---@field pronouns string the pronouns for this NPC, shown in their dialogue
+---@field tooltip string the tooltip message for this NPC, usually just a greeting message
+---@field specials string[] a list of at least 3 item oids that this NPC will have in it's special item pool
+---@field stock string[] a list of up to 10 item oids that this NPC will have as it's shop stock
+---@field greeting string the default greeting message shown in the dialogue menu when it opens
+---@field dialogue dialoguetree[] a special table that represents an NPCs dialogue tree
+---@field walking boolean @[Optional] whether this NPC will walk around or stay still
+---@field shop boolean @[Optional] whether this NPC will have a shop or just be dialogue only

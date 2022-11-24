@@ -179,3 +179,15 @@ function api_get_weather()  end
 ---@since 1.3.1
 ---@return string returns a 2 letter language code, current options: [en, fr, it, de, es, br, jp]
 function api_get_language() end
+
+---
+---@since 2.1.0
+---@param inst_id number instance id
+---@return string returns a ZOID
+function api_get_zoid_from_inst(inst_id) end
+
+---
+---@since 2.1.0
+---@param zoid string ZOID
+---@return number returns the inst_id of ZOID
+function api_get_inst_from_zoid(zoid) end
