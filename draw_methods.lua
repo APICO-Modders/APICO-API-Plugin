@@ -78,3 +78,11 @@ function api_draw_text(tx, ty, text, card, col, tw)  end
 ---@param tank_id number the tank gui id to draw
 function api_draw_tank(tank_id)  end
 
+---
+---@since 1.3.0
+---@param x number the x position to draw at
+---@param y number the y position to draw at
+---@param n string the number to draw
+---@param col string? @[Optional] the color key to use for the text, either one you defined with api_define_color() or a name from the colors_ref.json game file, defaults to white if not specified
+function api_draw_number(x, y, n, col) end
+
